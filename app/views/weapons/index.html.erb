@@ -1,0 +1,7 @@
+<% @weapons.each do |weapon| %>
+  <p><%= weapon.name %></p>
+  <p><%= weapon.current_power %></p>
+  <p><%= weapon.title %></p>
+  <p><%= link_to 'Show', weapon %></p>
+  <p><%= link_to 'Destroy',  { action: :destroy, id: weapon.id }, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<% end %>
